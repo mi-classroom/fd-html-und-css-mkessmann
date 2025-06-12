@@ -1,3 +1,6 @@
+# WebDev Testprojekt
+Dies ist das Testprojekt von Marvin Kessmann für das Modul „Web Development”
+
 # WebDev: Frontend-Development – Basics
 
 Das ist der Startercode für die ersten Sessions im Kurs Frontend-Development. Wir werden zur Bearbeitung der Aufgaben GitHub Classroom nutzen.
