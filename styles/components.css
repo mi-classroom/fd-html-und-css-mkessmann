@@ -1,0 +1,19 @@
+.infobox {
+  max-width: 500px;
+  background-color: var(--background-color);
+  border-left: solid 0.2rem var(--accent-color);
+  padding: 0.5rem;
+  img {
+    margin: -0.5rem;
+    margin-left: -0.7rem;
+  }
+}
+
+.imagebox {
+  max-width: 500px;
+  background-color: var(--background-color);
+  padding: 0.5rem;
+  img {
+    margin: -0.5rem;
+  }
+}
