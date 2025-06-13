@@ -1,0 +1,9 @@
+@font-face {
+    font-family: ibm-plex-sans;
+    src: url(/assets/fonts/IBMPlexSans-VariableFont_wdth\,wght.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: ibm-plex-sans-italic;
+    src: url(/assets/fonts/IBMPlexSans-Italic-VariableFont_wdth\,wght.ttf) format(truetype);
+}
