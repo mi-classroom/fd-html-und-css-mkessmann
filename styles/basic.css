@@ -1,0 +1,27 @@
+body {
+  font-family: sans-serif;
+  padding: 1rem;
+  color: black;
+  background-color: rgb(242, 242, 242);
+  line-height: 140%;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+p,
+h1,
+h2,
+h3,
+dd,
+li,
+figure {
+  margin-bottom: 1rem;
+}
