@@ -1,9 +1,9 @@
 .infobox {
     max-width: 500px;
-    background-color: var(--background-color);
+    background-color: var(--color-background);
   div {
-    border-left: solid 0.2rem var(--accent-color);
-    padding: 0.5rem;
+    border-left: solid 0.2rem var(--color-accent);
+    padding: var(--spacing-m);
   }
   img {
     width: 100%;
@@ -13,9 +13,9 @@
 .imagebox {
 
     max-width: 500px;
-    background-color: var(--background-color);
+    background-color: var(--color-background);
   div {
-    padding: 0.5rem;
+    padding: var(--spacing-m);
   }
   img {
     width: 100%;
