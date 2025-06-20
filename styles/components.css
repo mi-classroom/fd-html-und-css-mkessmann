@@ -1,37 +1,41 @@
+/*Infobox ###############################################*/
 .infobox {
-    max-width: 500px;
-    background-color: var(--color-background);
+  max-width: 500px;
+  background-color: var(--color-background-200);
   div {
-    border-left: solid 0.2rem var(--color-accent);
+    border-left: solid var(--border-width-l) var(--color-primary-default);
     padding: var(--spacing-m);
   }
+
   img {
     width: 100%;
   }
 }
 
+/*Imagebox ###############################################*/
 .imagebox {
-
-    max-width: 500px;
-    background-color: var(--color-background);
+  max-width: 500px;
+  background-color: var(--color-background-200);
   div {
+    border-left: solid var(--border-width-l) var(--color-primary-default);
     padding: var(--spacing-m);
   }
+
   img {
     width: 100%;
   }
 }
 
-
+/*Navigation ###############################################*/
 .navigation {
-  margin-bottom: 1rem;
-  margin-top: 1rem;
+  margin-bottom: var(--spacing-xl);
+  margin-top: var(--spacing-xl);
   li {
-    display: inline;
-    height: 30px;
+    /* display: inline; */
     align-items: center;
     align-self: stretch;
-    border-left: solid 0.2rem lightgray;
+    border-left: solid var(--border-width-m) lightgray;
+    padding-left: var(--spacing-2xs);
   }
   a {
     text-decoration: none;

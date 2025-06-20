@@ -1,19 +1,22 @@
 body {
-  font-family: ibm-plex-sans;
-  padding: 1rem;
-  color: black;
-  background-color: white;
-  line-height: 140%;
+  font-family: var(--font-family-primary);
+  padding: var(--spacing-m);
+  color: var(--color-text-default);
+  background-color: var(--color-backgroud-default);
+  line-height: var(--line-height-loose);
+  font-weight: var(--font-weight-regular);
 }
 
 h1 {
-  font-size: 2rem;
-  font-weight: bold;
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: var(--spacing-3xl);
+  line-height: var(--line-height-tight);
 }
 
 h2 {
-  font-size: 1.3rem;
-  font-weight: bold;
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
 }
 
 p,
@@ -23,5 +26,5 @@ h3,
 dd,
 li,
 figure {
-  margin-bottom: 1rem;
+  margin-bottom: var(--spacing-m);
 }
