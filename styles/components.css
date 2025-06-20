@@ -2,10 +2,9 @@
 .infobox {
   max-width: 500px;
   background-color: var(--color-background-200);
-  div {
-    border-left: solid var(--border-width-l) var(--color-primary-default);
-    padding: var(--spacing-m);
-  }
+  border-left: solid var(--border-width-l) var(--color-primary-default);
+  padding: var(--spacing-m);
+  /*TODO: Don't put border around image*/
 
   img {
     width: 100%;
@@ -16,7 +15,7 @@
 .imagebox {
   max-width: 500px;
   background-color: var(--color-background-200);
-  div {
+  figcaption {
     border-left: solid var(--border-width-l) var(--color-primary-default);
     padding: var(--spacing-m);
   }
@@ -30,15 +29,21 @@
 .navigation {
   margin-bottom: var(--spacing-xl);
   margin-top: var(--spacing-xl);
+  h2{
+    font-weight: var(--font-weight-regular);
+  }
   li {
     /* display: inline; */
+    margin-top: 0;
+    margin-bottom: 0;
     align-items: center;
     align-self: stretch;
-    border-left: solid var(--border-width-m) lightgray;
+    border-left: solid var(--border-width-l) lightgray;
     padding-left: var(--spacing-2xs);
   }
   a {
     text-decoration: none;
     color: gray;
   }
+  /*TODO: Add color transition on hover*/
 }
