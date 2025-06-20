@@ -38,12 +38,19 @@
     margin-bottom: 0;
     align-items: center;
     align-self: stretch;
-    border-left: solid var(--border-width-l) lightgray;
+    border-left: solid var(--border-width-m) lightgray;
     padding-left: var(--spacing-2xs);
-  }
-  a {
-    text-decoration: none;
-    color: gray;
+
+    &.on-hover {
+      border-left: solid var(--border-width-m)  var(--color-primary-default);
+      a {
+        color: var(--color-primary-default);
+      }
+    }
+    a {
+      text-decoration: none;
+      color: gray;
+    }
   }
   /*TODO: Add color transition on hover*/
 }
