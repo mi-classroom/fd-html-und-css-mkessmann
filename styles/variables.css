@@ -5,7 +5,7 @@
 
 :root {
   /* font family */
-  --font-family-primary: 'IBM Plex Sans', sans-serif;
+  --font-family-primary: ibm-plex-sans, sans-serif;
   
   /* font sizes */
   --font-size-s: 0.75rem;    /* 12px */
