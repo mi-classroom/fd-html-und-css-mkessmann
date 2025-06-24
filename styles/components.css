@@ -16,7 +16,6 @@
   max-width: 500px;
   background-color: var(--color-background-200);
   figcaption {
-    border-left: solid var(--border-width-l) var(--color-primary-default);
     padding: var(--spacing-m);
   }
 
