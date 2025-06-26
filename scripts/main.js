@@ -1,9 +1,7 @@
-/*Search and Menu Button interactions #################################*/
+/*Menu Button interactions #################################*/
 const menuOverlay = document.querySelector("[data-js-main-menu-target]");
 const menuOpenButton = document.querySelector("[data-js-main-menu-open]");
 const menuCloseButton = document.querySelector("[data-js-main-menu-close]");
-const searchOpenButton = document.querySelector("[data-js-search-open]");
-const searchCloseButton = document.querySelector("[data-js-search-close]");
 
 menuOpenButton.addEventListener("click", function () {
   menuOverlay.classList.add("is-active");
@@ -11,7 +9,20 @@ menuOpenButton.addEventListener("click", function () {
 menuCloseButton.addEventListener("click", function () {
   menuOverlay.classList.remove("is-active");
 });
+
+/*Search Button interactions #################################*/
+const searchOverlay = document.querySelector("[data-js-search-target]");
+const searchOpenButton = document.querySelector("[data-js-search-open]");
+const searchCloseButton = document.querySelector("[data-js-search-close]");
+const searchQueryButton = document.querySelector("[data-js-search-query]");
+
 searchOpenButton.addEventListener("click", function () {
+  searchOverlay.classList.add("is-active");
+});
+searchCloseButton.addEventListener("click", function () {
+  searchOverlay.classList.remove("is-active");
+});
+searchQueryButton.addEventListener("click", function () {
   console.log("Searching...");
 });
 
@@ -33,8 +44,6 @@ articleHeadlines.forEach(function (headline) {
   pageNavAnchor.innerText = headline.innerText;
   pageNavItem.appendChild(pageNavAnchor);
   pageNavigation.appendChild(pageNavItem);
-
-  console.log(headline.parentElement.id);
 });
 
 /*turn string to slug (taken from Christian Noss' code) ###############*/
