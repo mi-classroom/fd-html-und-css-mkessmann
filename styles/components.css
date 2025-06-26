@@ -1,7 +1,8 @@
 /*Infobox ###############################################*/
 .infobox {
-  max-width: 30rem;
-  div {
+  max-width: 70rem;
+  /*TODO: figure out why infobox with image stops growing before*/
+  figcaption {
     background-color: var(--color-background-200);
     border-left: solid var(--border-width-l) var(--color-primary-default);
     padding: var(--spacing-m);
@@ -9,7 +10,18 @@
 
   img {
     width: 100%;
+    height: auto;
     display: block;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    img {
+      object-fit: cover;
+      width: 50%;
+      max-width: 100%;
+      height: auto;
+    }
   }
 }
 
