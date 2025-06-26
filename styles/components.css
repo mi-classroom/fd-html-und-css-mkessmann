@@ -1,10 +1,10 @@
 /*Infobox ###############################################*/
 .infobox {
   max-width: 500px;
-  div{
-  background-color: var(--color-background-200);
-  border-left: solid var(--border-width-l) var(--color-primary-default);
-  padding: var(--spacing-m);
+  div {
+    background-color: var(--color-background-200);
+    border-left: solid var(--border-width-l) var(--color-primary-default);
+    padding: var(--spacing-m);
   }
   /*TODO: Remove gap between image and text*/
 
@@ -26,6 +26,9 @@
   }
 }
 
+/*Lists ####################################################*/
+/*TODO: add list separtors*/
+
 /*Navigation ###############################################*/
 .navigation {
   margin-bottom: var(--spacing-xl);
@@ -43,7 +46,7 @@
     padding-left: var(--spacing-2xs);
 
     &.on-hover {
-      border-left: solid var(--border-width-m)  var(--color-primary-default);
+      border-left: solid var(--border-width-m) var(--color-primary-default);
       a {
         color: var(--color-primary-default);
       }
