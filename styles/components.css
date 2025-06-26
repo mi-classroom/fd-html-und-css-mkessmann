@@ -1,10 +1,12 @@
 /*Infobox ###############################################*/
 .infobox {
   max-width: 500px;
+  div{
   background-color: var(--color-background-200);
   border-left: solid var(--border-width-l) var(--color-primary-default);
   padding: var(--spacing-m);
-  /*TODO: Don't put border around image*/
+  }
+  /*TODO: Remove gap between image and text*/
 
   img {
     width: 100%;
