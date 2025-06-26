@@ -51,14 +51,14 @@ articleHeadlines.forEach(function (headline) {
 const navigationOnHover = document.querySelectorAll(
   "[data-js-page-nav-menu] > li"
 );
-navigationOnHover.forEach(function (pageNavItem){
+navigationOnHover.forEach(function (pageNavItem) {
   pageNavItem.addEventListener("mouseover", function () {
-  pageNavItem.classList.add("on-hover");
+    pageNavItem.classList.add("on-hover");
+  });
+  pageNavItem.addEventListener("mouseout", function () {
+    pageNavItem.classList.remove("on-hover");
+  });
 });
-pageNavItem.addEventListener("mouseout", function () {
-  pageNavItem.classList.remove("on-hover");
-});
-})
 
 /*turn string to slug (taken from Christian Noss' code) ###############*/
 function toSlug(text) {
