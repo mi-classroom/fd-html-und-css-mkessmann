@@ -47,6 +47,18 @@ articleHeadlines.forEach(function (headline) {
   pageNavigation.appendChild(pageNavItem);
 });
 
+/*Navigation on hover interaction #####################################*/
+const navigationOnHover = document.querySelector(
+  "[data-js-page-nav-menu] > li"
+);
+navigationOnHover.addEventListener("mouseover", function () {
+  navigationOnHover.classList.add("on-hover");
+});
+navigationOnHover.addEventListener("mouseout", function () {
+  navigationOnHover.classList.remove("on-hover");
+});
+/*Apply hover interaction to all list elements*/
+
 /*turn string to slug (taken from Christian Noss' code) ###############*/
 function toSlug(text) {
   return text
@@ -67,14 +79,3 @@ function toSlug(text) {
     .replace(/^-|-$/g, "") // Remove leading and trailing dashes
     .replace(/--+/g, "-"); // Replace multiple dashes with a single dash
 }
-
-/*Navigation on hover interaction #####################################*/
-const navigationOnHover = document.querySelector(
-  "[data-js-page-nav-menu] > li"
-);
-navigationOnHover.addEventListener("mouseover", function () {
-  navigationOnHover.classList.add("on-hover");
-});
-navigationOnHover.addEventListener("mouseout", function () {
-  navigationOnHover.classList.remove("on-hover");
-});
