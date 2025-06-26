@@ -1,23 +1,21 @@
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 576px) {
   main {
     display: flex;
-    margin-top: 0;
-    margin: auto;
     justify-content: center;
 
-    .main-contain {
-      width: 66.6%;
-      max-width: 40rem;
+    .main-content {
+      margin-top: var(--spacing-xl);
+      max-width: 70rem;
     }
 
     .navigation {
-      width: 33.3%;
-      margin-top: 0;
-      margin-right: 3rem;
-      max-width: 12rem;
+      min-width: clamp(0rem, 30%, 12rem);
+      /*TODO: find a way to work fit-content into this as max value. Also why does it only work with 0rem as min?*/
+      margin-right: var(--spacing-2xl);
     }
   }
 }
+
 main {
   margin-top: 0;
   margin: auto;
