@@ -6,6 +6,7 @@ body:has(.header-overlay.is-active) {
   .header-container {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   .header-logo {
