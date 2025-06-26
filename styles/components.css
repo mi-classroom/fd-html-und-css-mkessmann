@@ -33,17 +33,15 @@
 .navigation {
   margin-bottom: var(--spacing-xl);
   margin-top: var(--spacing-xl);
-  h2 {
-    font-weight: var(--font-weight-regular);
-  }
   li {
     /* display: inline; */
+    font-size: var(--font-size-m);
     margin-top: 0;
     margin-bottom: 0;
     align-items: center;
     align-self: stretch;
     border-left: solid var(--border-width-m) lightgray;
-    padding-left: var(--spacing-2xs);
+    padding: var(--spacing-2xs);
 
     &.on-hover {
       border-left: solid var(--border-width-m) var(--color-primary-default);
