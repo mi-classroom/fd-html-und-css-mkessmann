@@ -1,39 +1,40 @@
-@media screen and (min-width: 576px) {
+@media screen and (width >= 576px) {
   main {
     display: flex;
     justify-content: center;
 
     .main-content {
-      margin-top: var(--spacing-xl);
       max-width: 70rem;
+      margin-top: var(--spacing-xl);
     }
 
     .navigation {
       min-width: clamp(0rem, 30%, 12rem);
-      /*TODO: find a way to work fit-content into this as max value. Also why does it only work with 0rem as min?*/
+
+      /* TODO: find a way to work fit-content into this as max value. Also why does it only work with 0rem as min? */
       margin-right: var(--spacing-2xl);
     }
   }
 }
 
 main {
-  margin-top: 0;
   margin: auto;
+  margin-top: 0;
 }
 
 body {
-  font-family: var(--font-family-primary);
   padding: var(--spacing-m);
-  color: var(--color-text-default);
   background-color: var(--color-backgroud-default);
-  line-height: var(--line-height-loose);
+  color: var(--color-text-default);
+  font-family: var(--font-family-primary);
   font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-loose);
 }
 
 h1 {
+  margin-bottom: var(--spacing-3xl);
   font-size: var(--font-size-2xl);
   font-weight: var(--font-weight-bold);
-  margin-bottom: var(--spacing-3xl);
   line-height: var(--line-height-tight);
 }
 

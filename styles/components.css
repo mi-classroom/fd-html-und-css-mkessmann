@@ -1,34 +1,37 @@
-/*Infobox ###############################################*/
+/* Infobox ############################################### */
 .infobox {
   max-width: 70rem;
-  /*TODO: figure out why infobox with image stops growing before*/
+
+  /* TODO: figure out why infobox with image stops growing before */
   figcaption {
-    background-color: var(--color-background-200);
-    border-left: solid var(--border-width-l) var(--color-primary-default);
     padding: var(--spacing-m);
+    border-left: solid var(--border-width-l) var(--color-primary-default);
+    background-color: var(--color-background-200);
   }
 
   img {
+    display: block;
     width: 100%;
     height: auto;
-    display: block;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (width >= 768px) {
     display: flex;
+
     img {
-      object-fit: cover;
       width: 50%;
       max-width: 100%;
       height: auto;
+      object-fit: cover;
     }
   }
 }
 
-/*Imagebox ###############################################*/
+/* Imagebox ############################################### */
 .imagebox {
   max-width: 30rem;
   background-color: var(--color-background-200);
+
   figcaption {
     padding: var(--spacing-m);
   }
@@ -38,45 +41,51 @@
   }
 }
 
-/*Lists ####################################################*/
-/*TODO: add list separtors*/
+/* Lists #################################################### */
 
-/*Navigation ###############################################*/
+/* TODO: add list separtors */
+
+/* Navigation ############################################### */
 .navigation {
-  margin-bottom: var(--spacing-xl);
   margin-top: var(--spacing-xl);
+  margin-bottom: var(--spacing-xl);
+
   li {
-    /* display: inline; */
-    font-size: var(--font-size-m);
-    margin-top: 0;
-    margin-bottom: 0;
     align-items: center;
     align-self: stretch;
-    border-left: solid var(--border-width-m) lightgray;
     padding: var(--spacing-2xs);
+    border-left: solid var(--border-width-m) lightgray;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    /* display: inline; */
+    font-size: var(--font-size-m);
 
     &.on-hover {
       border-left: solid var(--border-width-m) var(--color-primary-default);
+
       a {
         color: var(--color-primary-default);
       }
     }
+
     a {
-      text-decoration: none;
       color: gray;
+      text-decoration: none;
     }
   }
-  /*TODO: Add color transition on hover*/
+
+  /* TODO: Add color transition on hover */
 }
 
-/*Button ###############################################*/
+/* Button ############################################### */
 .button {
-  background-color: var(--color-primary-default);
+  height: 38px;
   padding: 0 var(--spacing-xs);
   border: none;
+  background-color: var(--color-primary-default);
   color: #fff;
   font-size: var(--font-size-l);
-  height: 38px;
 
   &:active {
     background-color: var(--color-primary-400);
