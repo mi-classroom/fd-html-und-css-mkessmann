@@ -14,7 +14,7 @@ menuCloseButton.addEventListener("click", function () {
 const searchOverlay = document.querySelector("[data-js-search-target]");
 const searchOpenButton = document.querySelector("[data-js-search-open]");
 const searchCloseButton = document.querySelector("[data-js-search-close]");
-const searchQueryButton = document.querySelector("[data-js-search-query]");
+const searchSubmitButton = document.querySelector("[data-js-search-submit]");
 
 searchOpenButton.addEventListener("click", function () {
   searchOverlay.classList.add("is-active");
@@ -22,8 +22,9 @@ searchOpenButton.addEventListener("click", function () {
 searchCloseButton.addEventListener("click", function () {
   searchOverlay.classList.remove("is-active");
 });
-searchQueryButton.addEventListener("click", function () {
-  console.log("Searching...");
+searchSubmitButton.addEventListener("click", function () {
+  console.log("[data-js-search-query]");
+  /*Keep button from reloading page and output string from form*/
 });
 
 /*on page navigation generation #######################################*/
