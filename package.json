@@ -1,0 +1,28 @@
+{
+  "name": "fd-html-und-css-mkessmann",
+  "version": "1.0.0",
+  "description": "Dies ist das Testprojekt von Marvin Kessmann für das Modul „Web Development”",
+  "homepage": "https://github.com/mi-classroom/fd-html-und-css-mkessmann#readme",
+  "bugs": {
+    "url": "https://github.com/mi-classroom/fd-html-und-css-mkessmann/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mi-classroom/fd-html-und-css-mkessmann.git"
+  },
+  "license": "ISC",
+  "author": "Marvin Dominik Kessmann",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "lint": "stylelint styles/**/*.css",
+    "lint:fix": "stylelint styles/**/*.css --fix",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "stylelint": "^16.21.0",
+    "stylelint-config-idiomatic-order": "^10.0.0",
+    "stylelint-config-standard": "^38.0.0",
+    "stylelint-order": "^7.0.0"
+  }
+}
