@@ -25,11 +25,16 @@ const articleHeadlines = document.querySelectorAll(
 articleHeadlines.forEach(function (headline) {
   const pageNavAnchor = document.createElement("a");
   const pageNavItem = document.createElement("li");
-  const sectionID = headline.innerText;
+  const articleID = headline.innerText;
+
+  headline.parentElement.setAttribute("id", articleID);
+  pageNavAnchor.setAttribute("href", `#${articleID}`);
 
   pageNavAnchor.innerText = headline.innerText;
   pageNavItem.appendChild(pageNavAnchor);
   pageNavigation.appendChild(pageNavItem);
+
+  console.log(headline.parentElement.id);
 });
 
 /*Navigation on hover interaction ###############################*/
