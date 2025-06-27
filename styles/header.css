@@ -29,11 +29,11 @@ body:has(.header-overlay.is-active) {
   .header-overlay {
     position: fixed;
     z-index: 1000;
-    inset: 0;
     display: none;
     align-items: center;
     justify-content: center;
     background-color: var(--color-background-default);
+    inset: 0;
 
     &.is-active {
       display: flex;

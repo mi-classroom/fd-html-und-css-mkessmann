@@ -50,6 +50,11 @@
   margin-top: var(--spacing-xl);
   margin-bottom: var(--spacing-xl);
 
+  a {
+    color: gray;
+    text-decoration: none;
+  }
+
   li {
     align-items: center;
     align-self: stretch;
@@ -68,14 +73,7 @@
         color: var(--color-primary-default);
       }
     }
-
-    a {
-      color: gray;
-      text-decoration: none;
-    }
   }
-
-  /* TODO: Add color transition on hover */
 }
 
 /* Button ############################################### */
